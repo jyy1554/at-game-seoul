@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>playatgame.com</title>
+    <script>
+      // GitHub Pages는 /seouler/game 같은 경로에 직접 접근하면 404를 반환함.
+      // 이 파일이 gh-pages 루트에 있으면, 404 발생 시 경로 정보를 쿼리로 변환해
+      // /seouler/ 의 index.html로 리다이렉트함.
+      var segmentCount = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
