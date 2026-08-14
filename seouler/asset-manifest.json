@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/seouler/static/css/main.ed93fecf.css",
+    "main.js": "/seouler/static/js/main.41244336.js",
+    "index.html": "/seouler/index.html",
+    "main.ed93fecf.css.map": "/seouler/static/css/main.ed93fecf.css.map",
+    "main.41244336.js.map": "/seouler/static/js/main.41244336.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed93fecf.css",
+    "static/js/main.41244336.js"
+  ]
+}
